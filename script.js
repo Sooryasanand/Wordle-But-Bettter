@@ -15316,7 +15316,7 @@ function stopInteraction() {
 }
 
 function handleMouseClick(e) {
-  if (e.target.matches("[data-keys]")) {
+  if (e.target.matches("[data-key]")) {
     pressKey(e.target.dataset.key);
     return;
   }
@@ -15326,7 +15326,7 @@ function handleMouseClick(e) {
     return;
   }
 
-  if (e.target.matches("[data-delete")) {
+  if (e.target.matches("[data-delete]")) {
     deleteKey();
     return;
   }
